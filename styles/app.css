@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-image: url('../images/caret-right.svg');
+}
+
+p,
+li {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.icon {
+    width: 60px;
+}
+
+.nav-link {
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 100px 0;
+}
+
+#education,
+#projects {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#intro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+        url("../images/intro/IMG_9748.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 750px;
+    padding: 8em 0 0;
+}
+
+#intro i {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+}
+
+#intro-content {
+    margin: 150px 0;
+    padding: 0;
+}
+
+#intro-content h1 {
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+#subtitle {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.school-block img {
+    width: 10em;
+    border-radius: 50%;
+    margin-bottom: 2em;
+}
+
+.section-title {
+    margin-bottom: 3em;
+}
+
+#profile-img {
+    width: 10em;
+    border-radius: 50%;
+}
+
+.proclamation {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+}
+
+.proclamation h3 {
+    margin: 1em 0 0 0;
+}
+
+.about-icon {
+    width: 5em;
+    margin: 1em 0;
+}
+
+.skill-icon img {
+    width: 3em;
+    filter: grayscale(100%);
+}
+
+.skill-icon img:hover {
+    filter: grayscale(0%);
+    transition: 0.2s;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* #navbarNavAltMarkup a.active {
+    color: white;
+} */
+
+#navbar {
+    transition: 0.2s all;
+}
+
+#navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(1em);
+}
+
+.job-description h3 {
+    font-weight: 800;
+}
+
+h3 span {
+    color: darkgreen;
+}
