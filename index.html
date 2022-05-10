@@ -16,6 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&family=Roboto:wght@100;300;400&family=Roboto+Slab:wght@100;200;400&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body class="d-flex flex-column vh-100">
@@ -129,53 +130,71 @@
                 <h2>WORK</h3>
             </div>
 
+            <section class="tabs-wrapper">
+                <div class="tabs-container">
+                    <div class="tabs-block">
+                        <div id="tabs-section" class="tabs">
+                            <ul class="tab-head">
+                                <li>
+                                    <a href="#tab-1" class="tab-link active"><span class="tab-label">ASML</span></a>
+                                </li>
+                                <li>
+                                    <a href="#tab-2" class="tab-link"><span class="tab-label">Logitech</span></a>
+                                </li>
+                                <li>
+                                    <a href="#tab-3" class="tab-link"><span class="tab-label">Long-Light</span></a>
+                                </li>
+                            </ul>
 
-            <div class="row">
-                <div class="tablist d-flex flex-column col-md-2 offset-md-2" style="font-size: 20px">
-                    <button>ASML</button>
-                    <button>Logitech</button>
-                    <button>Long-Light</button>
+                            <section id="tab-1" class="tab-body entry-content active active-content">
+                                <h3>Mechanical Intern <span>@ <a href="https://www.asml.com/en" class="animated-link">
+                                            ASML</a></span></h3>
+                                <p>June 2022 - Present</p>
+                                <ul>
+                                    <li>Develop and document mechanical designs for laser service tools for DUV laser
+                                        from
+                                        concept
+                                        to
+                                        completion to manufacturing.</li>
+                                    <li>Work with the project lead engineer to develop, analyze, and fabricate
+                                        component/assemblies.
+                                    </li>
+                                    <li>Create mechanical system/subsystem specifications to meet performance
+                                        requirements</li>
+                                    <li>Create detailed Creo CAD drawings to be used for the manufacture.</li>
+                                    <li>Analyze/select materials and verify design accuracy.</li>
+                                </ul>
+                            </section>
+
+                            <section id="tab-2" class="tab-body entry-content">
+                                <h3>Mechanical Intern <span>@ <a href="https://www.logitech.com/" class="animated-link">
+                                            Logitech</a></span>
+                                </h3>
+                                <p>July - August 2019</p>
+                                <ul>
+                                    <li>Achieved three different scrolling feelings of gaming mice by mechanical design.
+                                    </li>
+                                    <li>Designed engineering innovations with Creo and SolidWorks.</li>
+                                    <li>Performed hands-on prototyping with 3D printing and hand tools.</li>
+                                    <li>Enforced DFM and DFA principles and minimized potential manufacturing challenges
+                                        by
+                                        implementing new designs on existing products.</li>
+                                </ul>
+                            </section>
+
+                            <section id="tab-3" class="tab-body entry-content">
+                                <h3>Drafting Engineer <span>@ <a href="https://www.long-light.com.tw/en"
+                                            class="animated-link"> Long-Light</a></span></h3>
+                                <p>July - August 2018</p>
+                                <ul>
+                                    <li>Drafted 3D drawings of elevators and conveyors from 2D CAD with SolidWorks.</li>
+                                    <li>Assisted 2D layouts with Geometric Dimensioning and Tolerancing (GD&T).</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="job-description">
-                        <h3>Mechanical Intern <span>@ ASML</span></h3>
-                        <p>June 2022 - Present</p>
-                        <ul>
-                            <li>Develop and document mechanical designs for laser service tools for DUV laser from
-                                concept
-                                to
-                                completion to manufacturing.</li>
-                            <li>Work with the project lead engineer to develop, analyze, and fabricate
-                                component/assemblies.
-                            </li>
-                            <li>Create mechanical system/subsystem specifications to meet performance requirements</li>
-                            <li>Create detailed Creo CAD drawings to be used for the manufacture.</li>
-                            <li>Analyze/select materials and verify design accuracy.</li>
-                        </ul>
-                    </div>
-                    <div class="job-description">
-                        <h3>Mechanical Intern <span>@ Logitech</span></h3>
-                        <p>July - August 2019</p>
-                        <ul>
-                            <li>Achieved three different scrolling feelings of gaming mice by mechanical design.</li>
-                            <li>Designed engineering innovations with Creo and SolidWorks.</li>
-                            <li>Performed hands-on prototyping with 3D printing and hand tools.</li>
-                            <li>Enforced DFM and DFA principles and minimized potential manufacturing challenges by
-                                implementing new designs on existing products.</li>
-                        </ul>
-                    </div>
-                    <div class="job-description">
-                        <h3>Drafting Engineer <span>@ Long-Light</span></h3>
-                        <p>July - August 2018</p>
-                        <ul>
-                            <li>Drafted 3D drawings of elevators and conveyors from 2D CAD with SolidWorks.</li>
-                            <li>Assisted 2D layouts with Geometric Dimensioning and Tolerancing (GD&T).</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
+            </section>
         </section>
 
 
@@ -238,36 +257,56 @@
                         <img src="images/skillIcon/solidworks.png" alt="" class="img-responsive">
                     </div>
                     <div class="skill-icon col-md-2">
-                        <img src="images/skillIcon/ansys.png" alt="" class="img-responsive">
+                        <img src="images/skillIcon/creo.png" alt="" class="img-responsive">
                     </div>
                     <div class="skill-icon col-md-2">
                         <img src="images/skillIcon/autocad.png" alt="" class="img-responsive">
                     </div>
                     <div class="skill-icon col-md-2">
-                        <img src="https://bchiang7.github.io/v1/img/skills/python.png" alt="" class="">
+                        <img src="images/skillIcon/matlab.png" alt="" class="">
                     </div>
                     <div class="skill-icon col-md-2">
-                        <img src="https://bchiang7.github.io/v1/img/skills/bootstrap.png" alt="" class="img-responsive">
+                        <img src="images/skillIcon/ansys.png" alt="" class="img-responsive">
                     </div>
                     <div class="skill-icon col-md-2">
-                        <img src="https://bchiang7.github.io/v1/img/skills/github.png" alt="" class="img-responsive">
+                        <img src="images/skillIcon/arduino.png" alt="" class="img-responsive">
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <h3>SOFTWARE TECHNOLOGY I WORKED WITH</h3>
+                <div class="row mb-3">
+                    <div class="skill-icon col-md-2">
+                        <img src="images/skillIcon/html.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="skill-icon col-md-2">
+                        <img src="images/skillIcon/css.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="skill-icon col-md-2">
+                        <img src="images/skillIcon/js.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="skill-icon col-md-2">
+                        <img src="images/skillIcon/nodejs.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="skill-icon col-md-2">
+                        <img src="images/skillIcon/bootstrap.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="skill-icon col-md-2">
+                        <img src="images/skillIcon/github.png" alt="" class="img-responsive">
+                    </div>
+                </div>
                 <div class="row">
                     <div class="skill-icon col-md-2">
-                        <img src="https://bchiang7.github.io/v1/img/skills/html.png" alt="" class="img-responsive">
+                        <img src="images/skillIcon/react.png" alt="" class="img-responsive">
                     </div>
                     <div class="skill-icon col-md-2">
-                        <img src="https://bchiang7.github.io/v1/img/skills/css.png" alt="" class="img-responsive">
+                        <img src="images/skillIcon/npm.png" alt="" class="img-responsive">
                     </div>
                     <div class="skill-icon col-md-2">
-                        <img src="https://bchiang7.github.io/v1/img/skills/js.png" alt="" class="img-responsive">
+                        <img src="images/skillIcon/mongodb.png" alt="" class="img-responsive">
                     </div>
                     <div class="skill-icon col-md-2">
-                        <img src="https://bchiang7.github.io/v1/img/skills/python.png" alt="" class="img-responsive">
+                        <img src="images/skillIcon/nodejs.png" alt="" class="img-responsive">
                     </div>
                     <div class="skill-icon col-md-2">
                         <img src="https://bchiang7.github.io/v1/img/skills/bootstrap.png" alt="" class="img-responsive">
