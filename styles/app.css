@@ -130,8 +130,6 @@ section {
     backdrop-filter: blur(1em);
 }
 
-
-
 .tabs-wrapper {
     margin-top: 0;
     padding-top: 0;
@@ -213,7 +211,6 @@ section {
 
 .tabs section {
     width: 85%;
-    background-color: #fff;
     padding: 1rem;
     display: none;
     word-wrap: break-word;
@@ -327,4 +324,33 @@ section {
     .tabs {
         width: 800px;
     }
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    color: white;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform .3s, opacity .3s;
+}
+
+.img-filter {
+    background-color: black;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.project-container:hover .project-title {
+    opacity: 1;
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+.project-container:hover .img-filter {
+    opacity: 0.8;
 }
